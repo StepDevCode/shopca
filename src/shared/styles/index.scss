@@ -1,0 +1,37 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './colors.scss';
+
+html,
+body {
+  font-family: 'Satoshi', sans-serif;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: $fw-bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: $blackColor;
+}
+
+a {
+  color: $blackColor;
+}
