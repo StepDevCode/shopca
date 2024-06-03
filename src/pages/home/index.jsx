@@ -1,5 +1,11 @@
+import { ProductPreview } from '../../entities/product/productPreview/ui/productPreview'
+
 import './home.scss'
 
 export const Home = () => {
-  return <div>Home Page</div>
+  return (
+    <div>
+      <ProductPreview />
+    </div>
+  )
 }
