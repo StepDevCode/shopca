@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CONTENT_NAVIGATION_MENU } from '../../../shared/consts'
+import { Search } from '../../../features/search/ui/search/search'
 import Logo from '../../../shared/assets/icons/logo.svg'
 
 import './header.scss'
@@ -21,6 +22,7 @@ export const Header = () => {
               </li>
             ))}
           </ul>
+          <Search />
         </div>
       </div>
     </header>
