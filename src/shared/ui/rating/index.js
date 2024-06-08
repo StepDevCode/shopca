@@ -1,0 +1,1 @@
+export { renderStars } from './rating'
