@@ -1,0 +1,65 @@
+@import '../../../shared/styles/colors.scss';
+@import '../../../shared/styles/fonts.scss';
+
+.sort {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sortBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 22px;
+  color: $blackColor;
+}
+
+.sortText {
+  opacity: 0.6;
+}
+
+.sortActive {
+  font-weight: $fw-medium;
+  cursor: pointer;
+}
+
+.sortImg {
+  transform: rotate(90deg);
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sortImgActive {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-90deg);
+  margin-left: 5px;
+}
+
+.sortList {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: $whiteColor;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  z-index: 5;
+}
+
+.sortItem {
+  padding: 5px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blackColor;
+    color: $whiteColor;
+  }
+}
+
+.active {
+  background-color: $blackColor;
+  color: $whiteColor;
+}
